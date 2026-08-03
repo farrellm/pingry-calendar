@@ -1,0 +1,77 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//farrellm//pingry-calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pingry 2026-27 · All-school dates
+X-WR-CALDESC:First day\, last day\, and every return from break — the day
+ s that apply to the whole school\, both campuses.
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:first-day-of-school-20260903@farrellm.github.io
+DTSTAMP:20260803T235938Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:First Day of School
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:All divisions\, both campuses.
+CATEGORIES:All-school dates
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:classes-resume-20261130@farrellm.github.io
+DTSTAMP:20260803T235938Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:Classes Resume
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:All divisions\, both campuses.
+CATEGORIES:All-school dates
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:classes-resume-20270104@farrellm.github.io
+DTSTAMP:20260803T235938Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:Classes Resume
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:All divisions\, both campuses.
+CATEGORIES:All-school dates
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:classes-resume-20270322@farrellm.github.io
+DTSTAMP:20260803T235938Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Classes Resume
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:All divisions\, both campuses.
+CATEGORIES:All-school dates
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:last-day-of-classes-20270611@farrellm.github.io
+DTSTAMP:20260803T235938Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Last day of classes
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:All divisions\, both campuses.
+CATEGORIES:All-school dates
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+END:VCALENDAR

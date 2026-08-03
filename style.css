@@ -30,8 +30,8 @@
   --basking-ridge: #93c47d;
   --short-hills: #6fa8dc;
   --employees: #8e7cc3;
-  --milestone: #073763;
-  --milestone-ink: #fff;
+  --all-school: #073763;
+  --all-school-ink: #fff;
 
   --ink: #073763;
   --ink-soft: #46536b;
@@ -61,8 +61,8 @@
     --line: #2b3a55;
     --hairline: #1d2942;
     --focus: #8fb7ee;
-    --milestone: #cfe0f8;
-    --milestone-ink: #0a1120;
+    --all-school: #cfe0f8;
+    --all-school-ink: #0a1120;
   }
 }
 
@@ -120,7 +120,7 @@ a:hover { text-decoration-thickness: 2px; }
 
 .masthead {
   padding: clamp(2rem, 5vw, 3.75rem) var(--gutter) clamp(1.5rem, 3vw, 2.25rem);
-  border-top: 6px solid var(--milestone);
+  border-top: 6px solid var(--all-school);
 }
 
 .eyebrow {
@@ -268,12 +268,14 @@ h1 {
   background: var(--c);
   border: 1px solid rgb(0 0 0 / 0.18);
 }
+/* The combined feed carries every category, so its chip stacks all seven. */
 .feed[data-cat="all"] .feed__chip {
   background: linear-gradient(
     to bottom,
-    var(--closed-no-activities) 0 16.6%, var(--closed-athletics) 0 33.3%,
-    var(--no-homework-evening) 0 50%, var(--basking-ridge) 0 66.6%,
-    var(--short-hills) 0 83.3%, var(--employees) 0);
+    var(--all-school) 0 14.3%, var(--closed-no-activities) 0 28.6%,
+    var(--closed-athletics) 0 42.9%, var(--no-homework-evening) 0 57.1%,
+    var(--basking-ridge) 0 71.4%, var(--short-hills) 0 85.7%,
+    var(--employees) 0);
 }
 
 .feed__name {
@@ -419,7 +421,7 @@ h1 {
 .day { background: var(--card); }
 .day--weekend { background: var(--paper); }
 .day--fill { background: var(--c); color: #10161f; }
-.day--milestone { color: var(--milestone-ink); font-weight: 700; }
+.day--all-school { color: var(--all-school-ink); font-weight: 700; }
 .day--mark { color: var(--c); font-weight: 700; }
 
 /* ---------------------------------------------------------- isolation */
@@ -429,6 +431,7 @@ h1 {
    calendar. One rule per category, since CSS cannot interpolate the value. */
 
 [data-iso] .tick:not([data-cats]),
+[data-iso="all-school"] .tick:not([data-cats~="all-school"]),
 [data-iso="closed-no-activities"] .tick:not([data-cats~="closed-no-activities"]),
 [data-iso="closed-athletics"] .tick:not([data-cats~="closed-athletics"]),
 [data-iso="no-homework-evening"] .tick:not([data-cats~="no-homework-evening"]),
@@ -438,6 +441,7 @@ h1 {
 
 [data-iso] .pad,
 [data-iso] .day:not([data-cats]),
+[data-iso="all-school"] .day:not([data-cats~="all-school"]),
 [data-iso="closed-no-activities"] .day:not([data-cats~="closed-no-activities"]),
 [data-iso="closed-athletics"] .day:not([data-cats~="closed-athletics"]),
 [data-iso="no-homework-evening"] .day:not([data-cats~="no-homework-evening"]),
