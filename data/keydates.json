@@ -1,0 +1,203 @@
+{
+  "year": "2026-27",
+  "title": "2026–27 Key Dates",
+  "school": "The Pingry School",
+  "source_pdf": "https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf",
+  "source_updated": "July 30, 2026",
+  "span": ["2026-08-01", "2027-07-31"],
+  "timezone": "America/New_York",
+
+  "_comment": "Transcribed from the source PDF by tools/extract_pdf.py. 'days' are cell fills, 'marks' are colored date digits (campus scope on a day school is still open). 'events' are the labelled dates in the PDF margins and are what the .ics feeds contain.",
+
+  "categories": [
+    {
+      "key": "closed-no-activities",
+      "name": "School closed, no activities",
+      "color": "#E06666",
+      "blurb": "Campus closed. Nothing runs — no classes, no athletics, no activities."
+    },
+    {
+      "key": "closed-athletics",
+      "name": "School closed, athletics continue",
+      "color": "#E69138",
+      "blurb": "No classes, but teams still practice and compete. Check with your coach."
+    },
+    {
+      "key": "no-homework-evening",
+      "name": "No homework evening",
+      "color": "#FFD966",
+      "blurb": "No homework assigned that night; all activities end by 5:30 p.m."
+    },
+    {
+      "key": "basking-ridge",
+      "name": "Basking Ridge specific",
+      "color": "#93C47D",
+      "blurb": "Dates that apply only to the Basking Ridge campus, Grade 6 through Form VI."
+    },
+    {
+      "key": "short-hills",
+      "name": "Short Hills specific",
+      "color": "#6FA8DC",
+      "blurb": "Dates that apply only to the Short Hills campus, Kindergarten through Grade 5."
+    },
+    {
+      "key": "employees",
+      "name": "Employees only",
+      "color": "#8E7CC3",
+      "blurb": "Meetings and in-service days for faculty and staff. No students."
+    }
+  ],
+
+  "milestone": {
+    "key": "milestone",
+    "name": "All-school milestone",
+    "color": "#073763",
+    "blurb": "The five days the whole school turns on: first day, three returns from break, last day."
+  },
+
+  "days": {
+    "closed-no-activities": [
+      "2026-09-12", "2026-09-21", "2026-11-08", "2026-12-25", "2027-02-06",
+      "2027-03-10", "2027-03-26", "2027-03-28", "2027-06-18", "2027-07-05"
+    ],
+    "closed-athletics": [
+      "2026-09-07", "2026-10-12",
+      "2026-11-23..2026-11-27",
+      "2026-12-21..2026-12-24", "2026-12-28..2027-01-01",
+      "2027-01-18", "2027-02-15",
+      "2027-03-08..2027-03-09", "2027-03-11..2027-03-12", "2027-03-15..2027-03-19",
+      "2027-05-31"
+    ],
+    "no-homework-evening": ["2026-09-11", "2026-09-18", "2027-04-21"],
+    "basking-ridge": ["2026-11-17", "2027-04-23"],
+    "short-hills": ["2026-11-04", "2026-11-06", "2027-03-03", "2027-03-05"],
+    "employees": [
+      "2026-08-26..2026-08-28", "2026-08-31", "2026-09-01",
+      "2026-10-09", "2027-02-12", "2027-04-16",
+      "2027-06-14..2027-06-17"
+    ],
+    "milestone": ["2026-09-03", "2026-11-30", "2027-01-04", "2027-03-22", "2027-06-11"]
+  },
+
+  "marks": {
+    "employees": ["2026-08-24", "2026-08-25"],
+    "basking-ridge": ["2026-09-02", "2027-06-10", "2027-06-13"],
+    "short-hills": ["2026-09-02", "2027-06-11"]
+  },
+
+  "events": [
+    {
+      "start": "2026-08-24", "end": "2026-08-26",
+      "summary": "New Employee Orientation",
+      "description": "New employee orientation and classroom set-up.",
+      "categories": ["employees"]
+    },
+    {
+      "start": "2026-08-26", "end": "2026-09-01",
+      "summary": "Opening Meetings Week",
+      "categories": ["employees"]
+    },
+    {
+      "start": "2026-09-01",
+      "summary": "New Student Orientation",
+      "description": "New students in Forms IV–V.",
+      "categories": ["basking-ridge"]
+    },
+    {
+      "start": "2026-09-02",
+      "summary": "New Student Orientation",
+      "description": "All Grade 6 and Form III, and new students in Forms I. Parents and students K–5.",
+      "categories": ["basking-ridge", "short-hills"]
+    },
+    {
+      "start": "2026-09-03",
+      "summary": "First Day of School",
+      "description": "All divisions, both campuses.",
+      "categories": ["milestone"]
+    },
+    { "start": "2026-09-07", "summary": "Labor Day", "categories": ["closed-athletics"] },
+    { "start": "2026-09-11", "summary": "Rosh Hashanah Begins", "categories": ["no-homework-evening"] },
+    { "start": "2026-09-12", "summary": "Rosh Hashanah", "categories": ["closed-no-activities"] },
+    {
+      "start": "2026-09-18",
+      "summary": "No homework evening",
+      "description": "No homework assigned. All activities end by 5:30 p.m.",
+      "categories": ["no-homework-evening"]
+    },
+    { "start": "2026-09-20", "summary": "Yom Kippur Begins", "categories": [] },
+    { "start": "2026-09-21", "summary": "Yom Kippur", "categories": ["closed-no-activities"] },
+    { "start": "2026-10-09", "summary": "Employee In-Service", "categories": ["employees"] },
+    { "start": "2026-10-12", "summary": "Fall Break", "categories": ["closed-athletics"] },
+    {
+      "start": "2026-11-04",
+      "summary": "LS Conferences",
+      "description": "1:00 p.m. dismissal for Lower School.",
+      "categories": ["short-hills"]
+    },
+    {
+      "start": "2026-11-06",
+      "summary": "LS Conferences",
+      "description": "No classes for Lower School.",
+      "categories": ["short-hills"]
+    },
+    { "start": "2026-11-08", "summary": "Diwali", "categories": ["closed-no-activities"] },
+    {
+      "start": "2026-11-17",
+      "summary": "MS/US Conferences",
+      "description": "No classes for Middle School and Upper School.",
+      "categories": ["basking-ridge"]
+    },
+    { "start": "2026-11-21", "end": "2026-11-29", "summary": "Thanksgiving Break", "categories": ["closed-athletics"] },
+    { "start": "2026-11-30", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2026-12-19", "end": "2027-01-03", "summary": "Winter Break", "categories": ["closed-athletics"] },
+    { "start": "2026-12-25", "summary": "Christmas", "categories": ["closed-no-activities"] },
+    { "start": "2027-01-04", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2027-01-18", "summary": "Dr. Martin Luther King, Jr. Day", "categories": ["closed-athletics"] },
+    { "start": "2027-02-06", "summary": "Lunar New Year", "categories": ["closed-no-activities"] },
+    { "start": "2027-02-12", "summary": "Employee In-Service", "categories": ["employees"] },
+    { "start": "2027-02-15", "summary": "President’s Day", "categories": ["closed-athletics"] },
+    {
+      "start": "2027-03-03",
+      "summary": "LS Conferences",
+      "description": "1:00 p.m. dismissal for Lower School.",
+      "categories": ["short-hills"]
+    },
+    {
+      "start": "2027-03-05",
+      "summary": "LS Conferences",
+      "description": "No classes for Lower School.",
+      "categories": ["short-hills"]
+    },
+    { "start": "2027-03-06", "end": "2027-03-21", "summary": "Spring Break", "categories": ["closed-athletics"] },
+    { "start": "2027-03-10", "summary": "Eid al-Fitr", "categories": ["closed-no-activities"] },
+    { "start": "2027-03-22", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2027-03-26", "summary": "Good Friday", "categories": ["closed-no-activities"] },
+    { "start": "2027-03-28", "summary": "Easter", "categories": ["closed-no-activities"] },
+    { "start": "2027-04-16", "summary": "Employee In-Service", "categories": ["employees"] },
+    { "start": "2027-04-21", "summary": "Passover Begins", "categories": ["no-homework-evening"] },
+    {
+      "start": "2027-04-23",
+      "summary": "MS Conferences",
+      "description": "No classes for Middle School.",
+      "categories": ["basking-ridge"]
+    },
+    { "start": "2027-05-31", "summary": "Memorial Day", "categories": ["closed-athletics"] },
+    {
+      "start": "2027-06-10",
+      "summary": "Last day of classes for Middle School",
+      "description": "Early dismissal for Grade 6 and Form I.",
+      "categories": ["basking-ridge"]
+    },
+    { "start": "2027-06-11", "summary": "Last day of classes", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    {
+      "start": "2027-06-11",
+      "summary": "Grade 5 Moving Up Day",
+      "description": "Early dismissal for Lower School.",
+      "categories": ["short-hills"]
+    },
+    { "start": "2027-06-13", "summary": "Commencement", "categories": ["basking-ridge"] },
+    { "start": "2027-06-14", "end": "2027-06-17", "summary": "Closing Meetings Week", "categories": ["employees"] },
+    { "start": "2027-06-18", "summary": "Juneteenth (Observed)", "categories": ["closed-no-activities"] },
+    { "start": "2027-07-05", "summary": "Fourth of July (Observed)", "categories": ["closed-no-activities"] }
+  ]
+}
