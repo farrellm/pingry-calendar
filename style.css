@@ -1,0 +1,508 @@
+/* Pingry Key Dates — the legend is the interface.
+   Every color below is lifted from the source PDF; none were invented. */
+
+@font-face {
+  font-family: "Archivo";
+  src: url(fonts/archivo-latin.woff2) format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url(fonts/publicsans-latin.woff2) format("woff2");
+  font-weight: 300 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Martian Mono";
+  src: url(fonts/martianmono-latin.woff2) format("woff2");
+  font-weight: 100 800;
+  font-stretch: 75% 112.5%;
+  font-display: swap;
+}
+
+:root {
+  /* legend, verbatim from the PDF */
+  --closed-no-activities: #e06666;
+  --closed-athletics: #e69138;
+  --no-homework-evening: #ffd966;
+  --basking-ridge: #93c47d;
+  --short-hills: #6fa8dc;
+  --employees: #8e7cc3;
+  --milestone: #073763;
+  --milestone-ink: #fff;
+
+  --ink: #073763;
+  --ink-soft: #46536b;
+  --rule: #1c4587;
+  --paper: #e9eaec;
+  --card: #fff;
+  --line: #c6cad1;
+  --hairline: #dfe2e6;
+  --focus: #1c4587;
+
+  --display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --body: "Public Sans", ui-sans-serif, system-ui, sans-serif;
+  --data: "Martian Mono", ui-monospace, monospace;
+
+  --gutter: clamp(1.25rem, 4vw, 3.5rem);
+  --dim: 0.12;
+  --dim-day: 0.26;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #eef1f6;
+    --ink-soft: #a3adc0;
+    --rule: #5b86c4;
+    --paper: #0a1120;
+    --card: #111a2b;
+    --line: #2b3a55;
+    --hairline: #1d2942;
+    --focus: #8fb7ee;
+    --milestone: #cfe0f8;
+    --milestone-ink: #0a1120;
+  }
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.5;
+  font-synthesis-weight: none;
+}
+
+a { color: inherit; text-decoration-color: var(--rule); text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: -9999px;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 5;
+  padding: 0.5rem 0.9rem;
+  background: var(--card);
+  border: 1px solid var(--ink);
+}
+
+.sheet {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--card);
+  border-inline: 1px solid var(--line);
+  border-block-end: 1px solid var(--line);
+  overflow: clip;
+}
+
+.sheet > * + * { border-top: 1px solid var(--line); }
+.sheet > section,
+.sheet > footer { padding: clamp(1.75rem, 4vw, 3rem) var(--gutter); }
+
+/* ---------------------------------------------------------- masthead */
+
+.masthead {
+  padding: clamp(2rem, 5vw, 3.75rem) var(--gutter) clamp(1.5rem, 3vw, 2.25rem);
+  border-top: 6px solid var(--milestone);
+}
+
+.eyebrow {
+  margin: 0;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+h1 {
+  margin: 0.5rem 0 0;
+  font-family: var(--display);
+  font-stretch: 122%;
+  font-weight: 800;
+  font-size: clamp(2.75rem, 9vw, 6.25rem);
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+}
+
+.lede {
+  max-width: 34ch;
+  margin: 1.25rem 0 0;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.meta {
+  margin: 0.85rem 0 0;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.62rem;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+}
+
+/* ---------------------------------------------------------- the spine */
+
+.sheet > .spine { padding-block: clamp(1.25rem, 2.5vw, 1.75rem); }
+
+.spine__readout {
+  margin: 0 0 0.7rem;
+  min-height: 1.4em;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.7rem;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+}
+.spine__readout b { color: var(--ink); font-weight: 600; }
+
+.spine__ticks,
+.spine__months {
+  display: grid;
+  grid-template-columns: repeat(365, 1fr);
+}
+
+/* A skyline, not a bar: ordinary days are a quiet ground line, days that carry
+   a category stand full height. The year's shape — two long breaks, the purple
+   bookends of meetings weeks — is the whole point. */
+.spine__ticks {
+  align-items: end;
+  height: clamp(58px, 8.5vw, 90px);
+  border-bottom: 1px solid var(--line);
+  animation: wipe 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes wipe {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); }
+}
+
+.tick {
+  height: 11%;
+  background: var(--hairline);
+  transition: opacity 0.15s ease;
+}
+/* A day inside a named break but carrying no category of its own — the weekends
+   inside Winter Break. Raised just enough to read as one continuous stretch. */
+.tick[data-l] { height: 25%; background: var(--line); }
+.tick[data-cats] { height: 100%; background: var(--c); }
+
+.spine__months {
+  margin-top: 5px;
+}
+.spine__months span {
+  grid-column: span var(--span);
+  border-left: 1px solid var(--hairline);
+  padding-left: 4px;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  overflow: hidden;
+}
+.spine__months span:first-child { border-left: 0; padding-left: 0; }
+
+/* ---------------------------------------------------------- sections */
+
+.section-head { margin-bottom: 1.5rem; }
+.section-head h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-stretch: 118%;
+  font-weight: 700;
+  font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+.section-head p {
+  margin: 0.35rem 0 0;
+  max-width: 52ch;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.section-head b { color: var(--ink); font-weight: 600; }
+
+/* ---------------------------------------------------------- feeds */
+
+.feeds__list { border-top: 1px solid var(--line); }
+
+.feed { border-bottom: 1px solid var(--line); }
+
+.feed > summary {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr auto;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+.feed > summary::-webkit-details-marker { display: none; }
+
+.feed__chip {
+  height: 1.5rem;
+  background: var(--c);
+  border: 1px solid rgb(0 0 0 / 0.18);
+}
+.feed[data-cat="all"] .feed__chip {
+  background: linear-gradient(
+    to bottom,
+    var(--closed-no-activities) 0 16.6%, var(--closed-athletics) 0 33.3%,
+    var(--no-homework-evening) 0 50%, var(--basking-ridge) 0 66.6%,
+    var(--short-hills) 0 83.3%, var(--employees) 0);
+}
+
+.feed__name {
+  font-family: var(--display);
+  font-stretch: 108%;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.9vw, 1.15rem);
+  letter-spacing: -0.005em;
+}
+
+.feed__count {
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.66rem;
+  letter-spacing: 0.01em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.feed__count::after {
+  content: " +";
+  color: var(--rule);
+}
+.feed[open] .feed__count::after { content: " −"; }
+
+.feed__body { padding: 0.25rem 0 1.6rem 2.35rem; }
+
+.feed__blurb {
+  margin: 0 0 1.1rem;
+  max-width: 56ch;
+  font-size: 0.95rem;
+}
+
+.feed__list {
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--hairline);
+}
+.feed__list li {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 10rem) 1fr;
+  gap: 0.25rem 1.25rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.when {
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.66rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.what { font-size: 0.95rem; font-weight: 500; }
+.what em {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.feed__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 0.75rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.42rem 1rem;
+  border: 1px solid var(--ink);
+  font-family: var(--display);
+  font-stretch: 105%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+.btn:hover { background: var(--ink); color: var(--card); }
+.btn--go { background: var(--ink); color: var(--card); }
+.btn--go:hover { background: var(--rule); border-color: var(--rule); }
+
+.feed__url {
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.58rem;
+  color: var(--ink-soft);
+  word-break: break-all;
+}
+
+/* ---------------------------------------------------------- month grids */
+
+.months {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem 1.25rem;
+}
+
+.month h3 {
+  margin: 0 0 0.4rem;
+  font-family: var(--display);
+  font-stretch: 112%;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.month h3 span { color: var(--ink-soft); font-weight: 500; }
+
+.month__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+.month__head { display: contents; }
+
+/* Layout only — every background lives in the single-class rules below, so
+   nothing here can out-specify a day's category color. */
+.month__grid > i {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 0.86;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.6rem;
+  font-style: normal;
+  transition: opacity 0.15s ease;
+}
+
+.month__head i {
+  background: var(--card);
+  color: var(--ink-soft);
+  font-size: 0.52rem;
+  font-weight: 600;
+}
+
+.pad { background: var(--hairline); }
+.day { background: var(--card); }
+.day--weekend { background: var(--paper); }
+.day--fill { background: var(--c); color: #10161f; }
+.day--milestone { color: var(--milestone-ink); font-weight: 700; }
+.day--mark { color: var(--c); font-weight: 700; }
+
+/* ---------------------------------------------------------- isolation */
+
+/* Opening a feed points the whole page at one category. Ticks drop almost out
+   of sight; day cells keep enough of themselves that the grid still reads as a
+   calendar. One rule per category, since CSS cannot interpolate the value. */
+
+[data-iso] .tick:not([data-cats]),
+[data-iso="closed-no-activities"] .tick:not([data-cats~="closed-no-activities"]),
+[data-iso="closed-athletics"] .tick:not([data-cats~="closed-athletics"]),
+[data-iso="no-homework-evening"] .tick:not([data-cats~="no-homework-evening"]),
+[data-iso="basking-ridge"] .tick:not([data-cats~="basking-ridge"]),
+[data-iso="short-hills"] .tick:not([data-cats~="short-hills"]),
+[data-iso="employees"] .tick:not([data-cats~="employees"]) { opacity: var(--dim); }
+
+[data-iso] .pad,
+[data-iso] .day:not([data-cats]),
+[data-iso="closed-no-activities"] .day:not([data-cats~="closed-no-activities"]),
+[data-iso="closed-athletics"] .day:not([data-cats~="closed-athletics"]),
+[data-iso="no-homework-evening"] .day:not([data-cats~="no-homework-evening"]),
+[data-iso="basking-ridge"] .day:not([data-cats~="basking-ridge"]),
+[data-iso="short-hills"] .day:not([data-cats~="short-hills"]),
+[data-iso="employees"] .day:not([data-cats~="employees"]) { opacity: var(--dim-day); }
+
+/* The combined feed covers everything, so nothing recedes. */
+[data-iso="all"] .tick,
+[data-iso="all"] .day,
+[data-iso="all"] .pad { opacity: 1; }
+
+/* ---------------------------------------------------------- colophon */
+
+.colophon {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 1.5rem 3rem;
+  background: var(--paper);
+}
+.colophon h2 {
+  margin: 0 0 0.6rem;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.colophon dl { margin: 0; font-size: 0.88rem; }
+.colophon dt { font-weight: 600; margin-top: 0.6rem; }
+.colophon dt:first-child { margin-top: 0; }
+.colophon dd { margin: 0; color: var(--ink-soft); }
+.colophon p {
+  margin: 0 0 0.7rem;
+  max-width: 62ch;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+.colophon p:last-child { margin-bottom: 0; }
+
+/* ---------------------------------------------------------- responsive */
+
+@media (max-width: 1000px) {
+  .months { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  .months { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .colophon { grid-template-columns: minmax(0, 1fr); }
+  .feed__body { padding-left: 0; }
+  .feed__list li { grid-template-columns: minmax(0, 1fr); }
+  .when { white-space: normal; }
+}
+
+@media (max-width: 460px) {
+  .months { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .month__grid > i { aspect-ratio: 1 / 0.58; font-size: 0.72rem; }
+  .month__head i { font-size: 0.62rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

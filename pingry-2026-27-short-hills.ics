@@ -1,0 +1,91 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//farrellm//pingry-calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pingry 2026-27 · Short Hills specific
+X-WR-CALDESC:Dates that apply only to the Short Hills campus\, Kindergarten
+  through Grade 5.
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:new-student-orientation-20260902@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20260902
+DTEND;VALUE=DATE:20260903
+SUMMARY:New Student Orientation
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:All Grade 6 and Form III\, and new students in Forms I. Parents
+  and students K–5.
+CATEGORIES:Basking Ridge specific,Short Hills specific
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:ls-conferences-20261104@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:LS Conferences
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:1:00 p.m. dismissal for Lower School.
+CATEGORIES:Short Hills specific
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:ls-conferences-20261106@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:LS Conferences
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:No classes for Lower School.
+CATEGORIES:Short Hills specific
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:ls-conferences-20270303@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+SUMMARY:LS Conferences
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:1:00 p.m. dismissal for Lower School.
+CATEGORIES:Short Hills specific
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:ls-conferences-20270305@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:LS Conferences
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:No classes for Lower School.
+CATEGORIES:Short Hills specific
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:grade-5-moving-up-day-20270611@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:Grade 5 Moving Up Day
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:Early dismissal for Lower School.
+CATEGORIES:Short Hills specific
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+END:VCALENDAR

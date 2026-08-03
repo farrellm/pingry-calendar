@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//farrellm//pingry-calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pingry 2026-27 · No homework evening
+X-WR-CALDESC:No homework assigned that night\; all activities end by 5:30 p
+ .m.
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:rosh-hashanah-begins-20260911@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Rosh Hashanah Begins
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:No homework evening
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:no-homework-evening-20260918@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:No homework evening
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:No homework assigned. All activities end by 5:30 p.m.
+CATEGORIES:No homework evening
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:passover-begins-20270421@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:Passover Begins
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:No homework evening
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+END:VCALENDAR

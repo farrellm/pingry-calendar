@@ -1,0 +1,85 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//farrellm//pingry-calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pingry 2026-27 · Employees only
+X-WR-CALDESC:Meetings and in-service days for faculty and staff. No student
+ s.
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:P7D
+X-PUBLISHED-TTL:P7D
+BEGIN:VEVENT
+UID:new-employee-orientation-20260824@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260827
+SUMMARY:New Employee Orientation
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+DESCRIPTION:New employee orientation and classroom set-up.
+CATEGORIES:Employees only
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:opening-meetings-week-20260826@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20260826
+DTEND;VALUE=DATE:20260902
+SUMMARY:Opening Meetings Week
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:Employees only
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:employee-in-service-20261009@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Employee In-Service
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:Employees only
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:employee-in-service-20270212@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:Employee In-Service
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:Employees only
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:employee-in-service-20270416@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:Employee In-Service
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:Employees only
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+BEGIN:VEVENT
+UID:closing-meetings-week-20270614@farrellm.github.io
+DTSTAMP:20260803T234604Z
+DTSTART;VALUE=DATE:20270614
+DTEND;VALUE=DATE:20270618
+SUMMARY:Closing Meetings Week
+TRANSP:TRANSPARENT
+CLASS:PUBLIC
+CATEGORIES:Employees only
+URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
+ 4vyxpxr/Final2026-27PingryKeyDatesCalendar030426.pdf
+END:VEVENT
+END:VCALENDAR
