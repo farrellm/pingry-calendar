@@ -11,6 +11,12 @@
 
   "categories": [
     {
+      "key": "all-school",
+      "name": "All-school dates",
+      "color": "#073763",
+      "blurb": "First day, last day, and every return from break — the days that apply to the whole school, both campuses."
+    },
+    {
       "key": "closed-no-activities",
       "name": "School closed, no activities",
       "color": "#E06666",
@@ -48,13 +54,6 @@
     }
   ],
 
-  "milestone": {
-    "key": "milestone",
-    "name": "All-school milestone",
-    "color": "#073763",
-    "blurb": "The five days the whole school turns on: first day, three returns from break, last day."
-  },
-
   "days": {
     "closed-no-activities": [
       "2026-09-12", "2026-09-21", "2026-11-08", "2026-12-25", "2027-02-06",
@@ -76,7 +75,7 @@
       "2026-10-09", "2027-02-12", "2027-04-16",
       "2027-06-14..2027-06-17"
     ],
-    "milestone": ["2026-09-03", "2026-11-30", "2027-01-04", "2027-03-22", "2027-06-11"]
+    "all-school": ["2026-09-03", "2026-11-30", "2027-01-04", "2027-03-22", "2027-06-11"]
   },
 
   "marks": {
@@ -113,7 +112,7 @@
       "start": "2026-09-03",
       "summary": "First Day of School",
       "description": "All divisions, both campuses.",
-      "categories": ["milestone"]
+      "categories": ["all-school"]
     },
     { "start": "2026-09-07", "summary": "Labor Day", "categories": ["closed-athletics"] },
     { "start": "2026-09-11", "summary": "Rosh Hashanah Begins", "categories": ["no-homework-evening"] },
@@ -148,10 +147,10 @@
       "categories": ["basking-ridge"]
     },
     { "start": "2026-11-21", "end": "2026-11-29", "summary": "Thanksgiving Break", "categories": ["closed-athletics"] },
-    { "start": "2026-11-30", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2026-11-30", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["all-school"] },
     { "start": "2026-12-19", "end": "2027-01-03", "summary": "Winter Break", "categories": ["closed-athletics"] },
     { "start": "2026-12-25", "summary": "Christmas", "categories": ["closed-no-activities"] },
-    { "start": "2027-01-04", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2027-01-04", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["all-school"] },
     { "start": "2027-01-18", "summary": "Dr. Martin Luther King, Jr. Day", "categories": ["closed-athletics"] },
     { "start": "2027-02-06", "summary": "Lunar New Year", "categories": ["closed-no-activities"] },
     { "start": "2027-02-12", "summary": "Employee In-Service", "categories": ["employees"] },
@@ -170,7 +169,7 @@
     },
     { "start": "2027-03-06", "end": "2027-03-21", "summary": "Spring Break", "categories": ["closed-athletics"] },
     { "start": "2027-03-10", "summary": "Eid al-Fitr", "categories": ["closed-no-activities"] },
-    { "start": "2027-03-22", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2027-03-22", "summary": "Classes Resume", "description": "All divisions, both campuses.", "categories": ["all-school"] },
     { "start": "2027-03-26", "summary": "Good Friday", "categories": ["closed-no-activities"] },
     { "start": "2027-03-28", "summary": "Easter", "categories": ["closed-no-activities"] },
     { "start": "2027-04-16", "summary": "Employee In-Service", "categories": ["employees"] },
@@ -188,7 +187,7 @@
       "description": "Early dismissal for Grade 6 and Form I.",
       "categories": ["basking-ridge"]
     },
-    { "start": "2027-06-11", "summary": "Last day of classes", "description": "All divisions, both campuses.", "categories": ["milestone"] },
+    { "start": "2027-06-11", "summary": "Last day of classes", "description": "All divisions, both campuses.", "categories": ["all-school"] },
     {
       "start": "2027-06-11",
       "summary": "Grade 5 Moving Up Day",

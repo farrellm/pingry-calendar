@@ -1,7 +1,7 @@
 # Pingry Key Dates → calendar feeds
 
 The Pingry School publishes its key dates calendar as a one-page PDF: a picture of a wall calendar,
-color-coded against a six-item legend. You cannot subscribe to a picture. This turns it into seven
+color-coded against a six-item legend. You cannot subscribe to a picture. This turns it into eight
 `.ics` feeds and one page that lets you pick the one that describes you.
 
 **→ [farrellm.github.io/pingry-calendar](https://farrellm.github.io/pingry-calendar/)**
@@ -11,17 +11,18 @@ around a date.
 
 ## The feeds
 
-One per legend category, plus everything in one.
+One per legend category, one for the days that apply to the whole school, plus everything in one.
 
-| Feed | Legend color | Dates |
+| Feed | Category | Dates |
 | --- | --- | --- |
+| `pingry-2026-27-all-school.ics` | `#073763` All-school dates | 5 |
 | `pingry-2026-27-closed-no-activities.ics` | `#E06666` School closed, no activities | 10 |
 | `pingry-2026-27-closed-athletics.ics` | `#E69138` School closed, athletics continue | 8 |
 | `pingry-2026-27-no-homework.ics` | `#FFD966` No homework evening | 3 |
 | `pingry-2026-27-basking-ridge.ics` | `#93C47D` Basking Ridge specific | 6 |
 | `pingry-2026-27-short-hills.ics` | `#6FA8DC` Short Hills specific | 6 |
 | `pingry-2026-27-employees.ics` | `#8E7CC3` Employees only | 6 |
-| `pingry-2026-27-all.ics` | — | 44 |
+| `pingry-2026-27-all.ics` | Every date | 44 |
 
 Subscribe with the feed's URL — for example
 `https://farrellm.github.io/pingry-calendar/pingry-2026-27-all.ics`. Events are all-day in
@@ -34,8 +35,11 @@ Everything is transcribed from the source PDF. Two places where that matters:
 
 - The PDF marks a no-homework evening on **Friday 18 September**, not on 20 September when Yom
   Kippur begins. That is what it prints, so that is what the feeds say.
-- The PDF colors five days in navy — first day, three returns from break, last day. That is
-  emphasis rather than a legend category, so those days appear in the combined feed only.
+- The PDF colors five days in navy and labels each one "(ALL)" — first day, three returns from
+  break, last day. Its legend does not name them, but they are the only set in the document that
+  applies to everyone, so they get their own category here: **All-school dates**.
+- `2026-09-20` "Yom Kippur Begins" carries no color in the PDF, so it appears in the combined feed
+  only.
 
 ## Building
 

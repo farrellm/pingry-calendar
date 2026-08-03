@@ -40,8 +40,8 @@ CATEGORY_BY_FILL = {
     "23.921204%, 52.157593%, 77.6474%": "short-hills",            # 3D85C6
     "55.686951%, 48.626709%, 76.470947%": "employees",            # 8E7CC3
     "40.391541%, 30.587769%, 65.490723%": "employees",            # 675099 (digits)
-    "2.745056%, 21.568298%, 38.822937%": "milestone",             # 073763
-    "10.980225%, 27.058411%, 52.941895%": "milestone",            # 1C4587
+    "2.745056%, 21.568298%, 38.822937%": "all-school",            # 073763
+    "10.980225%, 27.058411%, 52.941895%": "all-school",           # 1C4587
 }
 
 # Month grid geometry, in PDF points. Two columns of six month blocks; the header

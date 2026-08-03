@@ -22,7 +22,7 @@ DEFAULT_SITE_URL = "https://farrellm.github.io/pingry-calendar/"
 
 # Which fill wins when a day carries more than one category.
 PRECEDENCE = [
-    "milestone",
+    "all-school",
     "closed-no-activities",
     "closed-athletics",
     "no-homework-evening",
@@ -193,8 +193,8 @@ def render_months(data, fills, marks, labels):
                 fill = sorted(fills[day], key=PRECEDENCE.index)[0]
                 classes.append("day--fill")
                 attrs += f' style="--c:var(--{fill})"'
-                if fill == "milestone":
-                    classes.append("day--milestone")
+                if fill == "all-school":
+                    classes.append("day--all-school")
             elif marks.get(day):
                 mark = sorted(marks[day], key=PRECEDENCE.index)[0]
                 classes.append("day--mark")
@@ -258,9 +258,7 @@ def main():
 
     data = json.loads(DATA.read_text())
     categories = data["categories"]
-    milestone = data["milestone"]
     data["names"] = {c["key"]: c["name"] for c in categories}
-    data["names"][milestone["key"]] = milestone["name"]
 
     fills = {}
     for key, specs in data["days"].items():
@@ -281,12 +279,15 @@ def main():
             labels.setdefault(day, []).append(event["summary"])
     events.sort(key=lambda e: (e["_start"], e["_end"]))
 
+    combined = {
+        "key": "all",
+        "name": "Every date",
+        "blurb": "Every date on the calendar, whichever campus or division you are in.",
+    }
+
     slugs = {"no-homework-evening": "no-homework"}
     feeds = []
-    for category in categories + [dict(milestone, key="all",
-                                       name="All key dates",
-                                       blurb="Every date on the calendar, whichever "
-                                             "campus or division you are in.")]:
+    for category in categories + [combined]:
         key = category["key"]
         matching = ([e for e in events] if key == "all"
                     else [e for e in events if key in e["categories"]])
