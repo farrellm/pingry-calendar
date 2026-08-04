@@ -11,10 +11,10 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:rosh-hashanah-begins-20260911@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
-SUMMARY:Rosh Hashanah Begins
+SUMMARY:Rosh Hashanah Begins (No homework evening)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:No homework evening
@@ -23,10 +23,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:no-homework-evening-20260918@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
-SUMMARY:No homework evening
+SUMMARY:No homework evening (No homework evening)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No homework assigned. All activities end by 5:30 p.m.
@@ -36,10 +36,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:passover-begins-20270421@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
-SUMMARY:Passover Begins
+SUMMARY:Passover Begins (No homework evening)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:No homework evening

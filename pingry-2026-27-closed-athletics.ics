@@ -11,10 +11,10 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:labor-day-20260907@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260907
 DTEND;VALUE=DATE:20260908
-SUMMARY:Labor Day
+SUMMARY:Labor Day (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -23,10 +23,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:fall-break-20261012@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
-SUMMARY:Fall Break
+SUMMARY:Fall Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -35,10 +35,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:thanksgiving-break-20261121@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261130
-SUMMARY:Thanksgiving Break
+SUMMARY:Thanksgiving Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -47,10 +47,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:winter-break-20261219@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20270104
-SUMMARY:Winter Break
+SUMMARY:Winter Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -59,10 +59,11 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:dr-martin-luther-king-jr-day-20270118@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
-SUMMARY:Dr. Martin Luther King\, Jr. Day
+SUMMARY:Dr. Martin Luther King\, Jr. Day (School closed\, athletics continu
+ e)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -71,10 +72,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:president-s-day-20270215@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270215
 DTEND;VALUE=DATE:20270216
-SUMMARY:President’s Day
+SUMMARY:President’s Day (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -83,10 +84,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:spring-break-20270306@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270322
-SUMMARY:Spring Break
+SUMMARY:Spring Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -95,10 +96,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:memorial-day-20270531@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270531
 DTEND;VALUE=DATE:20270601
-SUMMARY:Memorial Day
+SUMMARY:Memorial Day (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue

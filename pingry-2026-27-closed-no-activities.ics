@@ -11,10 +11,10 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:rosh-hashanah-20260912@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
-SUMMARY:Rosh Hashanah
+SUMMARY:Rosh Hashanah (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -23,10 +23,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:yom-kippur-20260921@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
-SUMMARY:Yom Kippur
+SUMMARY:Yom Kippur (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -35,10 +35,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:diwali-20261108@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
-SUMMARY:Diwali
+SUMMARY:Diwali (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -47,10 +47,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-20261225@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
-SUMMARY:Christmas
+SUMMARY:Christmas (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -59,10 +59,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:lunar-new-year-20270206@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
-SUMMARY:Lunar New Year
+SUMMARY:Lunar New Year (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -71,10 +71,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:eid-al-fitr-20270310@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
-SUMMARY:Eid al-Fitr
+SUMMARY:Eid al-Fitr (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -83,10 +83,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:good-friday-20270326@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
-SUMMARY:Good Friday
+SUMMARY:Good Friday (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -95,10 +95,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:easter-20270328@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270328
 DTEND;VALUE=DATE:20270329
-SUMMARY:Easter
+SUMMARY:Easter (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -107,10 +107,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:juneteenth-observed-20270618@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270618
 DTEND;VALUE=DATE:20270619
-SUMMARY:Juneteenth (Observed)
+SUMMARY:Juneteenth (Observed) (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -119,10 +119,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:fourth-of-july-observed-20270705@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270705
 DTEND;VALUE=DATE:20270706
-SUMMARY:Fourth of July (Observed)
+SUMMARY:Fourth of July (Observed) (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities

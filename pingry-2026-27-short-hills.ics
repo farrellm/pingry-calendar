@@ -11,10 +11,11 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:new-student-orientation-20260902@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
-SUMMARY:New Student Orientation
+SUMMARY:New Student Orientation (Basking Ridge specific\, Short Hills speci
+ fic)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All Grade 6 and Form III\, and new students in Forms I. Parents
@@ -25,10 +26,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20261104@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:1:00 p.m. dismissal for Lower School.
@@ -38,10 +39,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20261106@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No classes for Lower School.
@@ -51,10 +52,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20270303@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270304
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:1:00 p.m. dismissal for Lower School.
@@ -64,10 +65,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20270305@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No classes for Lower School.
@@ -77,10 +78,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:grade-5-moving-up-day-20270611@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
-SUMMARY:Grade 5 Moving Up Day
+SUMMARY:Grade 5 Moving Up Day (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:Early dismissal for Lower School.

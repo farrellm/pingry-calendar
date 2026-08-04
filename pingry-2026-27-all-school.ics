@@ -11,10 +11,10 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:first-day-of-school-20260903@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
-SUMMARY:First Day of School
+SUMMARY:First Day of School (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -24,10 +24,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:classes-resume-20261130@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
-SUMMARY:Classes Resume
+SUMMARY:Classes Resume (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -37,10 +37,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:classes-resume-20270104@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
-SUMMARY:Classes Resume
+SUMMARY:Classes Resume (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -50,10 +50,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:classes-resume-20270322@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
-SUMMARY:Classes Resume
+SUMMARY:Classes Resume (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -63,10 +63,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:last-day-of-classes-20270611@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
-SUMMARY:Last day of classes
+SUMMARY:Last day of classes (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.

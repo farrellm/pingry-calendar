@@ -11,10 +11,10 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:new-employee-orientation-20260824@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260824
 DTEND;VALUE=DATE:20260827
-SUMMARY:New Employee Orientation
+SUMMARY:New Employee Orientation (Employees only)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:New employee orientation and classroom set-up.
@@ -24,10 +24,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:opening-meetings-week-20260826@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260902
-SUMMARY:Opening Meetings Week
+SUMMARY:Opening Meetings Week (Employees only)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:Employees only
@@ -36,10 +36,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:new-student-orientation-20260901@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260902
-SUMMARY:New Student Orientation
+SUMMARY:New Student Orientation (Basking Ridge specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:New students in Forms IV–V.
@@ -49,10 +49,11 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:new-student-orientation-20260902@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
-SUMMARY:New Student Orientation
+SUMMARY:New Student Orientation (Basking Ridge specific\, Short Hills speci
+ fic)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All Grade 6 and Form III\, and new students in Forms I. Parents
@@ -63,10 +64,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:first-day-of-school-20260903@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
-SUMMARY:First Day of School
+SUMMARY:First Day of School (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -76,10 +77,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:labor-day-20260907@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260907
 DTEND;VALUE=DATE:20260908
-SUMMARY:Labor Day
+SUMMARY:Labor Day (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -88,10 +89,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:rosh-hashanah-begins-20260911@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
-SUMMARY:Rosh Hashanah Begins
+SUMMARY:Rosh Hashanah Begins (No homework evening)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:No homework evening
@@ -100,10 +101,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:rosh-hashanah-20260912@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
-SUMMARY:Rosh Hashanah
+SUMMARY:Rosh Hashanah (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -112,10 +113,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:no-homework-evening-20260918@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
-SUMMARY:No homework evening
+SUMMARY:No homework evening (No homework evening)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No homework assigned. All activities end by 5:30 p.m.
@@ -125,7 +126,7 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:yom-kippur-begins-20260920@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260920
 DTEND;VALUE=DATE:20260921
 SUMMARY:Yom Kippur Begins
@@ -136,10 +137,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:yom-kippur-20260921@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20260921
 DTEND;VALUE=DATE:20260922
-SUMMARY:Yom Kippur
+SUMMARY:Yom Kippur (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -148,10 +149,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:employee-in-service-20261009@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
-SUMMARY:Employee In-Service
+SUMMARY:Employee In-Service (Employees only)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:Employees only
@@ -160,10 +161,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:fall-break-20261012@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
-SUMMARY:Fall Break
+SUMMARY:Fall Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -172,10 +173,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20261104@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:1:00 p.m. dismissal for Lower School.
@@ -185,10 +186,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20261106@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No classes for Lower School.
@@ -198,10 +199,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:diwali-20261108@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261108
 DTEND;VALUE=DATE:20261109
-SUMMARY:Diwali
+SUMMARY:Diwali (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -210,10 +211,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-us-conferences-20261117@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
-SUMMARY:MS/US Conferences
+SUMMARY:MS/US Conferences (Basking Ridge specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No classes for Middle School and Upper School.
@@ -223,10 +224,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:thanksgiving-break-20261121@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261130
-SUMMARY:Thanksgiving Break
+SUMMARY:Thanksgiving Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -235,10 +236,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:classes-resume-20261130@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
-SUMMARY:Classes Resume
+SUMMARY:Classes Resume (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -248,10 +249,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:winter-break-20261219@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261219
 DTEND;VALUE=DATE:20270104
-SUMMARY:Winter Break
+SUMMARY:Winter Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -260,10 +261,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:christmas-20261225@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20261225
 DTEND;VALUE=DATE:20261226
-SUMMARY:Christmas
+SUMMARY:Christmas (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -272,10 +273,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:classes-resume-20270104@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270104
 DTEND;VALUE=DATE:20270105
-SUMMARY:Classes Resume
+SUMMARY:Classes Resume (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -285,10 +286,11 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:dr-martin-luther-king-jr-day-20270118@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270118
 DTEND;VALUE=DATE:20270119
-SUMMARY:Dr. Martin Luther King\, Jr. Day
+SUMMARY:Dr. Martin Luther King\, Jr. Day (School closed\, athletics continu
+ e)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -297,10 +299,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:lunar-new-year-20270206@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270206
 DTEND;VALUE=DATE:20270207
-SUMMARY:Lunar New Year
+SUMMARY:Lunar New Year (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -309,10 +311,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:employee-in-service-20270212@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
-SUMMARY:Employee In-Service
+SUMMARY:Employee In-Service (Employees only)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:Employees only
@@ -321,10 +323,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:president-s-day-20270215@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270215
 DTEND;VALUE=DATE:20270216
-SUMMARY:President’s Day
+SUMMARY:President’s Day (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -333,10 +335,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20270303@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270303
 DTEND;VALUE=DATE:20270304
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:1:00 p.m. dismissal for Lower School.
@@ -346,10 +348,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ls-conferences-20270305@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
-SUMMARY:LS Conferences
+SUMMARY:LS Conferences (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No classes for Lower School.
@@ -359,10 +361,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:spring-break-20270306@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270306
 DTEND;VALUE=DATE:20270322
-SUMMARY:Spring Break
+SUMMARY:Spring Break (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -371,10 +373,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:eid-al-fitr-20270310@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270310
 DTEND;VALUE=DATE:20270311
-SUMMARY:Eid al-Fitr
+SUMMARY:Eid al-Fitr (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -383,10 +385,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:classes-resume-20270322@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270322
 DTEND;VALUE=DATE:20270323
-SUMMARY:Classes Resume
+SUMMARY:Classes Resume (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -396,10 +398,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:good-friday-20270326@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270326
 DTEND;VALUE=DATE:20270327
-SUMMARY:Good Friday
+SUMMARY:Good Friday (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -408,10 +410,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:easter-20270328@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270328
 DTEND;VALUE=DATE:20270329
-SUMMARY:Easter
+SUMMARY:Easter (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -420,10 +422,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:employee-in-service-20270416@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270416
 DTEND;VALUE=DATE:20270417
-SUMMARY:Employee In-Service
+SUMMARY:Employee In-Service (Employees only)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:Employees only
@@ -432,10 +434,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:passover-begins-20270421@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270421
 DTEND;VALUE=DATE:20270422
-SUMMARY:Passover Begins
+SUMMARY:Passover Begins (No homework evening)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:No homework evening
@@ -444,10 +446,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-conferences-20270423@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270424
-SUMMARY:MS Conferences
+SUMMARY:MS Conferences (Basking Ridge specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:No classes for Middle School.
@@ -457,10 +459,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:memorial-day-20270531@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270531
 DTEND;VALUE=DATE:20270601
-SUMMARY:Memorial Day
+SUMMARY:Memorial Day (School closed\, athletics continue)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, athletics continue
@@ -469,10 +471,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:last-day-of-classes-for-middle-school-20270610@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270610
 DTEND;VALUE=DATE:20270611
-SUMMARY:Last day of classes for Middle School
+SUMMARY:Last day of classes for Middle School (Basking Ridge specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:Early dismissal for Grade 6 and Form I.
@@ -482,10 +484,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:last-day-of-classes-20270611@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
-SUMMARY:Last day of classes
+SUMMARY:Last day of classes (All-school dates)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:All divisions\, both campuses.
@@ -495,10 +497,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:grade-5-moving-up-day-20270611@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
-SUMMARY:Grade 5 Moving Up Day
+SUMMARY:Grade 5 Moving Up Day (Short Hills specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 DESCRIPTION:Early dismissal for Lower School.
@@ -508,10 +510,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:commencement-20270613@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270613
 DTEND;VALUE=DATE:20270614
-SUMMARY:Commencement
+SUMMARY:Commencement (Basking Ridge specific)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:Basking Ridge specific
@@ -520,10 +522,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:closing-meetings-week-20270614@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270618
-SUMMARY:Closing Meetings Week
+SUMMARY:Closing Meetings Week (Employees only)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:Employees only
@@ -532,10 +534,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:juneteenth-observed-20270618@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270618
 DTEND;VALUE=DATE:20270619
-SUMMARY:Juneteenth (Observed)
+SUMMARY:Juneteenth (Observed) (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
@@ -544,10 +546,10 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:fourth-of-july-observed-20270705@farrellm.github.io
-DTSTAMP:20260804T002257Z
+DTSTAMP:20260804T003607Z
 DTSTART;VALUE=DATE:20270705
 DTEND;VALUE=DATE:20270706
-SUMMARY:Fourth of July (Observed)
+SUMMARY:Fourth of July (Observed) (School closed\, no activities)
 TRANSP:TRANSPARENT
 CLASS:PUBLIC
 CATEGORIES:School closed\, no activities
