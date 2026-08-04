@@ -40,7 +40,8 @@
     <section class="grids">
       <div class="section-head">
         <h2>The year in full</h2>
-        <p>Colors and dates match the source calendar exactly.</p>
+        <p>Colors and dates match the source calendar exactly. Click any marked day to read what
+          happens on it.</p>
       </div>
       <div class="months">
         {{MONTHS}}
@@ -73,6 +74,8 @@
     </footer>
   </main>
 
+  <div id="daypop" popover="auto" role="dialog" aria-label="Day detail" tabindex="-1"></div>
+  <script type="application/json" id="day-events">{{DAY_EVENTS}}</script>
   <script src="app.js"></script>
 </body>
 </html>

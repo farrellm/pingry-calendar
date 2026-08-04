@@ -168,7 +168,8 @@ def render_spine(data, fills, marks, labels):
             attrs.append(f'data-cats="{" ".join(categories)}"')
             attrs.append(f'style="--c:var(--{categories[0]})"')
         if labels.get(day):
-            attrs.append(f'data-l="{esc(" · ".join(labels[day]))}"')
+            names = " · ".join(e["summary"] for e in labels[day])
+            attrs.append(f'data-l="{esc(names)}"')
         ticks.append(f'<i class="tick"{"" if not attrs else " " + " ".join(attrs)}></i>')
 
     months = []
@@ -181,6 +182,26 @@ def render_spine(data, fills, marks, labels):
 
     return (f'<div class="spine__ticks">{"".join(ticks)}</div>\n'
             f'      <div class="spine__months">{"".join(months)}</div>')
+
+
+def render_day_events(data, labels):
+    """ISO date -> the events on it, as a JSON island the popup reads."""
+    days = {}
+    for day, events in sorted(labels.items()):
+        days[day.isoformat()] = [
+            {
+                "name": event["summary"],
+                "description": event.get("description", ""),
+                "categories": [
+                    {"key": key, "name": data["names"][key]}
+                    for key in event["categories"]
+                ],
+            }
+            for event in events
+        ]
+    blob = json.dumps(days, ensure_ascii=False, separators=(",", ":"))
+    # Nothing may close the <script> early, whatever ends up in an event name.
+    return blob.replace("</", "<\\/")
 
 
 def render_months(data, fills, marks, labels):
@@ -209,10 +230,15 @@ def render_months(data, fills, marks, labels):
                 attrs += f' style="--c:var(--{mark})"'
             if categories:
                 attrs += f' data-cats="{" ".join(categories)}"'
+
+            # A day with events is a button so it can be clicked and tabbed to;
+            # the rest stay inert <i>, keeping 277 blanks out of the tab order.
             if labels.get(day):
-                title = f"{day.day} {day:%b} · " + " · ".join(labels[day])
-                attrs += f' title="{esc(title)}"'
-            cells.append(f'<i class="{" ".join(classes)}"{attrs}>{day.day}</i>')
+                attrs += f' type="button" data-d="{day.isoformat()}"'
+                cells.append(
+                    f'<button class="{" ".join(classes)}"{attrs}>{day.day}</button>')
+            else:
+                cells.append(f'<i class="{" ".join(classes)}"{attrs}>{day.day}</i>')
 
         heads = "".join(f"<i>{d}</i>" for d in WEEKDAY_INITIALS)
         blocks.append(
@@ -277,7 +303,7 @@ def main():
         event["_end"] = datetime.date.fromisoformat(event.get("end", event["start"]))
         events.append(event)
         for day in date_range(event["_start"], event["_end"]):
-            labels.setdefault(day, []).append(event["summary"])
+            labels.setdefault(day, []).append(event)
     events.sort(key=lambda e: (e["_start"], e["_end"]))
 
     combined = {
@@ -322,6 +348,7 @@ def main():
         "{{FEED_COUNT}}": str(len(feeds)),
         "{{SPINE}}": render_spine(data, fills, marks, labels),
         "{{MONTHS}}": render_months(data, fills, marks, labels),
+        "{{DAY_EVENTS}}": render_day_events(data, labels),
         "{{FEEDS}}": render_feeds(feeds),
         "{{BUILT}}": datetime.date.today().strftime("%-d %B %Y"),
     }

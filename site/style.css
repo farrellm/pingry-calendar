@@ -398,9 +398,26 @@ h1 {
 }
 .month__head { display: contents; }
 
+/* Days with events are buttons. The reset is wrapped in :where() so it carries
+   zero specificity and the .day--* color and weight rules below still win. */
+:where(.month__grid) button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  outline-offset: -2px;
+}
+:where(.month__grid) button:hover {
+  box-shadow: inset 0 0 0 2px var(--rule);
+}
+
 /* Layout only — every background lives in the single-class rules below, so
    nothing here can out-specify a day's category color. */
-.month__grid > i {
+.month__grid > i,
+.month__grid > button {
   display: grid;
   place-items: center;
   aspect-ratio: 1 / 0.86;
@@ -424,6 +441,82 @@ h1 {
 .day--fill { background: var(--c); color: #10161f; }
 .day--all-school { color: var(--all-school-ink); font-weight: 700; }
 .day--mark { color: var(--c); font-weight: 700; }
+
+/* ---------------------------------------------------------- day popup */
+
+#daypop {
+  position: fixed;
+  inset: auto;
+  z-index: 50;
+  margin: 0;
+  width: max-content;
+  max-width: min(23rem, calc(100vw - 2rem));
+  padding: 0.8rem 1rem 0.9rem;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 8px 28px rgb(7 21 45 / 0.22);
+}
+/* Focus moves here on open so Esc works and the card is announced, but the card
+   itself holds nothing interactive — the global focus ring would just be noise. */
+#daypop:focus,
+#daypop:focus-visible { outline: none; }
+
+/* With popover support the UA owns visibility; without it, the class does. */
+@supports not selector(:popover-open) {
+  #daypop { display: none; }
+  #daypop.is-open { display: block; }
+}
+
+.daypop__date {
+  margin: 0 0 0.55rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--hairline);
+  font-family: var(--display);
+  font-stretch: 112%;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.daypop__event + .daypop__event {
+  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--hairline);
+}
+
+.daypop__name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.daypop__desc {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+.daypop__cat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin: 0.35rem 0 0;
+  font-family: var(--data);
+  font-stretch: 75%;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.daypop__chip {
+  flex: none;
+  width: 0.62rem;
+  height: 0.62rem;
+  background: var(--c);
+  border: 1px solid rgb(0 0 0 / 0.18);
+}
 
 /* ---------------------------------------------------------- isolation */
 
