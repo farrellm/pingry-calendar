@@ -26,7 +26,8 @@ One per legend category, one for the days that apply to the whole school, plus e
 
 Download one from the page and import it into Google Calendar, Apple Calendar, or Outlook. Events
 are all-day in America/New_York, and multi-day breaks are single spanning events, so Winter Break
-arrives as one band rather than sixteen entries.
+arrives as one band rather than sixteen entries. Each event names its category in its description
+as well as in `CATEGORIES`, since most calendar apps display the first and ignore the second.
 
 ## Fidelity
 

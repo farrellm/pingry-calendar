@@ -128,10 +128,16 @@ def build_ics(name, description, events, data, stamp):
             "TRANSP:TRANSPARENT",
             "CLASS:PUBLIC",
         ]
-        if event.get("description"):
-            lines.append(f"DESCRIPTION:{escape(event['description'])}")
-        if event["categories"]:
-            names = [data["names"][key] for key in event["categories"]]
+        # The category goes in DESCRIPTION as well as CATEGORIES: calendar apps
+        # display the former and ignore the latter, so this is the only way an
+        # imported event says whether athletics still run.
+        names = [data["names"][key] for key in event["categories"]]
+        parts = [event["description"]] if event.get("description") else []
+        if names:
+            parts.append(f"({', '.join(names)})")
+        if parts:
+            lines.append(f"DESCRIPTION:{escape(' '.join(parts))}")
+        if names:
             lines.append("CATEGORIES:" + ",".join(escape(n) for n in names))
         lines += [f"URL:{data['source_pdf']}", "END:VEVENT"]
     lines.append("END:VCALENDAR")
