@@ -401,14 +401,18 @@ h1 {
 /* Days with events are buttons. The reset is wrapped in :where() so it carries
    zero specificity and the .day--* color and weight rules below still win. */
 :where(.month__grid) button {
+  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
   padding: 0;
   border: 0;
+  border-radius: 0;
   background: none;
   color: inherit;
   font: inherit;
   cursor: pointer;
   outline-offset: -2px;
+  -webkit-tap-highlight-color: transparent;
 }
 :where(.month__grid) button:hover {
   box-shadow: inset 0 0 0 2px var(--rule);
@@ -596,7 +600,11 @@ h1 {
 
 @media (max-width: 460px) {
   .months { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
-  .month__grid > i { aspect-ratio: 1 / 0.58; font-size: 0.72rem; }
+  /* Must name both element types. Sizing only the <i> cells here left the
+     event buttons on the desktop aspect-ratio, so they stood taller than their
+     neighbours and the grid's gutter showed through as gray bars. */
+  .month__grid > i,
+  .month__grid > button { aspect-ratio: 1 / 0.58; font-size: 0.72rem; }
   .month__head i { font-size: 0.62rem; }
 }
 
