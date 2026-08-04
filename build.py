@@ -118,25 +118,30 @@ def build_ics(name, description, events, data, stamp):
     for event in events:
         start = datetime.date.fromisoformat(event["start"])
         end = datetime.date.fromisoformat(event.get("end", event["start"]))
+
+        # The category rides in the title, which is the one piece of an event a
+        # calendar app prints in the month grid. CATEGORIES carries it too, but
+        # Google, Apple, and Outlook all ignore that property.
+        names = [data["names"][key] for key in event["categories"]]
+        summary = event["summary"]
+        if names:
+            summary += f" ({', '.join(names)})"
+
         lines += [
             "BEGIN:VEVENT",
+            # Keyed on the bare summary, not the decorated one: these UIDs are
+            # already published, and changing them would turn a re-import into
+            # 44 duplicates instead of 44 updates.
             f"UID:{slug(event['summary'])}-{start:%Y%m%d}@farrellm.github.io",
             f"DTSTAMP:{stamp}",
             f"DTSTART;VALUE=DATE:{start:%Y%m%d}",
             f"DTEND;VALUE=DATE:{end + datetime.timedelta(days=1):%Y%m%d}",
-            f"SUMMARY:{escape(event['summary'])}",
+            f"SUMMARY:{escape(summary)}",
             "TRANSP:TRANSPARENT",
             "CLASS:PUBLIC",
         ]
-        # The category goes in DESCRIPTION as well as CATEGORIES: calendar apps
-        # display the former and ignore the latter, so this is the only way an
-        # imported event says whether athletics still run.
-        names = [data["names"][key] for key in event["categories"]]
-        parts = [event["description"]] if event.get("description") else []
-        if names:
-            parts.append(f"({', '.join(names)})")
-        if parts:
-            lines.append(f"DESCRIPTION:{escape(' '.join(parts))}")
+        if event.get("description"):
+            lines.append(f"DESCRIPTION:{escape(event['description'])}")
         if names:
             lines.append("CATEGORIES:" + ",".join(escape(n) for n in names))
         lines += [f"URL:{data['source_pdf']}", "END:VEVENT"]
