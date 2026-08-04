@@ -11,7 +11,7 @@ REFRESH-INTERVAL;VALUE=DURATION:P7D
 X-PUBLISHED-TTL:P7D
 BEGIN:VEVENT
 UID:new-student-orientation-20260901@farrellm.github.io
-DTSTAMP:20260804T005559Z
+DTSTAMP:20260804T010514Z
 DTSTART;VALUE=DATE:20260901
 DTEND;VALUE=DATE:20260902
 SUMMARY:New Student Orientation (Basking Ridge specific)
@@ -24,7 +24,7 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:new-student-orientation-20260902@farrellm.github.io
-DTSTAMP:20260804T005559Z
+DTSTAMP:20260804T010514Z
 DTSTART;VALUE=DATE:20260902
 DTEND;VALUE=DATE:20260903
 SUMMARY:New Student Orientation (Basking Ridge specific\, Short Hills speci
@@ -39,7 +39,7 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-us-conferences-20261117@farrellm.github.io
-DTSTAMP:20260804T005559Z
+DTSTAMP:20260804T010514Z
 DTSTART;VALUE=DATE:20261117
 DTEND;VALUE=DATE:20261118
 SUMMARY:MS/US Conferences (Basking Ridge specific)
@@ -52,7 +52,7 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:ms-conferences-20270423@farrellm.github.io
-DTSTAMP:20260804T005559Z
+DTSTAMP:20260804T010514Z
 DTSTART;VALUE=DATE:20270423
 DTEND;VALUE=DATE:20270424
 SUMMARY:MS Conferences (Basking Ridge specific)
@@ -65,7 +65,7 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:last-day-of-classes-for-middle-school-20270610@farrellm.github.io
-DTSTAMP:20260804T005559Z
+DTSTAMP:20260804T010514Z
 DTSTART;VALUE=DATE:20270610
 DTEND;VALUE=DATE:20270611
 SUMMARY:Last day of classes for Middle School (Basking Ridge specific)
@@ -78,7 +78,7 @@ URL:https://resources.finalsite.net/images/v1785502957/pingry/zwozs23cvyqxb
 END:VEVENT
 BEGIN:VEVENT
 UID:commencement-20270613@farrellm.github.io
-DTSTAMP:20260804T005559Z
+DTSTAMP:20260804T010514Z
 DTSTART;VALUE=DATE:20270613
 DTEND;VALUE=DATE:20270614
 SUMMARY:Commencement (Basking Ridge specific)
