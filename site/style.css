@@ -308,19 +308,27 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* The list is the grid, not each row — otherwise every row sizes its own date
+   column and the titles come out ragged. `auto` then measures the longest span
+   in the whole list ("Sat 19 Dec 2026 – Sun 3 Jan 2027") and every title lines
+   up behind it. */
 .feed__list {
+  display: grid;
+  grid-template-columns: auto 1fr;
   margin: 0 0 1.4rem;
   padding: 0;
   list-style: none;
   border-top: 1px solid var(--hairline);
 }
-.feed__list li {
-  display: grid;
-  grid-template-columns: minmax(7.5rem, 10rem) 1fr;
-  gap: 0.25rem 1.25rem;
+.feed__list li { display: contents; }
+/* Separated by padding rather than a column gap, so each row's rule runs
+   unbroken from the date across to the title. */
+.feed__list .when,
+.feed__list .what {
   padding: 0.45rem 0;
   border-bottom: 1px solid var(--hairline);
 }
+.feed__list .when { padding-right: 1.5rem; }
 .when {
   font-family: var(--data);
   font-stretch: 75%;
@@ -345,29 +353,22 @@ h1 {
   gap: 0.6rem 0.75rem;
 }
 
+/* Downloading is the only action a row offers, so the button is filled. */
 .btn {
   display: inline-block;
   padding: 0.42rem 1rem;
   border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--card);
   font-family: var(--display);
   font-stretch: 105%;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   text-decoration: none;
-  transition: background-color 0.12s ease, color 0.12s ease;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
 }
-.btn:hover { background: var(--ink); color: var(--card); }
-.btn--go { background: var(--ink); color: var(--card); }
-.btn--go:hover { background: var(--rule); border-color: var(--rule); }
-
-.feed__url {
-  font-family: var(--data);
-  font-stretch: 75%;
-  font-size: 0.58rem;
-  color: var(--ink-soft);
-  word-break: break-all;
-}
+.btn:hover { background: var(--rule); border-color: var(--rule); }
 
 /* ---------------------------------------------------------- month grids */
 
@@ -494,7 +495,9 @@ h1 {
   .months { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .colophon { grid-template-columns: minmax(0, 1fr); }
   .feed__body { padding-left: 0; }
-  .feed__list li { grid-template-columns: minmax(0, 1fr); }
+  /* Date stacks above its title; only the title carries the row rule. */
+  .feed__list { grid-template-columns: minmax(0, 1fr); }
+  .feed__list .when { padding-bottom: 0; border-bottom: 0; }
   .when { white-space: normal; }
 }
 

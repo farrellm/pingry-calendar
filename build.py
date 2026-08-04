@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Build the Pingry Key Dates site and its .ics feeds into dist/.
+"""Build the Pingry Key Dates site and its .ics calendars into dist/.
 
-    python3 build.py [--site-url https://example.github.io/pingry-calendar/]
+    python3 build.py
 
 Everything comes from data/keydates.json. Standard library only.
 """
 
-import argparse
 import datetime
 import json
 import re
@@ -17,8 +16,6 @@ ROOT = Path(__file__).parent
 DATA = ROOT / "data" / "keydates.json"
 SITE = ROOT / "site"
 DIST = ROOT / "dist"
-
-DEFAULT_SITE_URL = "https://farrellm.github.io/pingry-calendar/"
 
 # Which fill wins when a day carries more than one category.
 PRECEDENCE = [
@@ -239,9 +236,7 @@ def render_feeds(feeds):
             <p class="feed__blurb">{esc(feed['blurb'])}</p>
             <ol class="feed__list">{listing}</ol>
             <div class="feed__actions">
-              <a class="btn btn--go" href="{esc(feed['webcal'])}">Subscribe</a>
               <a class="btn" href="{esc(feed['file'])}" download>Download .ics</a>
-              <code class="feed__url">{esc(feed['url'])}</code>
             </div>
           </div>
         </details>""")
@@ -251,11 +246,6 @@ def render_feeds(feeds):
 # ---------------------------------------------------------------- main
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--site-url", default=DEFAULT_SITE_URL)
-    args = parser.parse_args()
-    site_url = args.site_url.rstrip("/") + "/"
-
     data = json.loads(DATA.read_text())
     categories = data["categories"]
     data["names"] = {c["key"]: c["name"] for c in categories}
@@ -298,8 +288,6 @@ def main():
             "blurb": category["blurb"],
             "events": matching,
             "file": filename,
-            "url": site_url + filename,
-            "webcal": "webcal://" + site_url.split("://", 1)[1] + filename,
         })
 
     DIST.mkdir(exist_ok=True)
